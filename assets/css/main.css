@@ -177,10 +177,10 @@ input, select, textarea {
 	.magictextwriter p {
 		display: inline-block;
 		overflow: hidden;
-		letter-spacing: 2px;
-	    animation: typing 4s steps(75, end);
-	    white-space: nowrap;
-	    font-size: 30px;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+	    animation: typing 5s steps(300, end);
+	    color: gainsboro;
+		max-width: 100%;
 	}
 
 	@keyframes typing {
