@@ -139,8 +139,16 @@ input, select, textarea {
 
 		}
 
-	body, input, select, textarea {
-		color: #ffffff;
+	input, select, textarea {
+		color: white;
+		font-family: "Source Sans Pro", sans-serif;
+		font-weight: 300;
+		font-size: 1rem;
+		line-height: 1.65;
+	}
+	
+	body {
+		color: rgb(255, 255, 255);
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
@@ -178,7 +186,7 @@ input, select, textarea {
 		display: inline-block;
 		overflow: hidden;
 		font-family: Georgia, 'Times New Roman', Times, serif;
-	    animation: typing 5s steps(300, end);
+	    animation: typing 3s steps(500, end);
 	    color: gainsboro;
 		max-width: 100%;
 	}
@@ -193,12 +201,56 @@ input, select, textarea {
 	}
 
 	.namezp {
-		color: orange;
+		color: rgb(92, 194, 194);
 	}
 
-	.webdev {
-		color: cyan;
-	}
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+svg {
+    display: inline-block;
+    font: 5em 'Montserrat';
+    width: 100%;
+    height: 150px;
+    
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+  stroke: green;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+  stroke: wheat;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+  stroke: orange;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+  stroke: goldenrod;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+  stroke: gold;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+  100% {stroke-dashoffset: -35%;}
+}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
@@ -215,7 +267,7 @@ input, select, textarea {
 		}
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			border-bottom: solid 1px #ffffff;
+			border-bottom: solid 1px white;
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
@@ -401,7 +453,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: white;
 		display: block;
 		font-size: 0.8rem;
 		font-weight: 300;
@@ -643,6 +695,7 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+			color: white;
 		}
 
 		.icon > .label {
@@ -661,6 +714,8 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
+
+
 /* Image */
 
 	.image {
@@ -672,7 +727,6 @@ input, select, textarea {
 
 		.image:before {
 			pointer-events: none;
-			background-image: url("../../images/overlay.png");
 			background-color: rgba(19, 21, 25, 0.5);
 			border-radius: 4px;
 			content: '';
@@ -724,6 +778,7 @@ input, select, textarea {
 			display: block;
 			margin: 2.5rem 0;
 			width: 100%;
+			animation: fade 10s infinite;
 		}
 
 			.image.main img {
@@ -981,7 +1036,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #ffffff;
+			color: white;
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -1041,11 +1096,12 @@ input, select, textarea {
 		border-radius: 4px;
 		border: 0;
 		box-shadow: inset 0 0 0 1px #ffffff;
-		color: #ffffff !important;
+		color: #ff0000 !important;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.8rem;
-		font-weight: 300;
+		font-size: 1rem;
+		font-style: oblique;
+		font-weight: 500;
 		height: 2.75rem;
 		letter-spacing: 0.2rem;
 		line-height: 2.75rem;
@@ -1305,7 +1361,7 @@ input, select, textarea {
 				left: calc(50% - 1px);
 				width: 1px;
 				height: calc(3.5rem + 1px);
-				background: #ffffff;
+				background: goldenrod;
 			}
 
 		#header > :first-child {
@@ -1320,7 +1376,7 @@ input, select, textarea {
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
-			border: solid 1px #ffffff;
+			border: solid 1px goldenrod;
 			border-radius: 100%;
 		}
 
@@ -1330,7 +1386,7 @@ input, select, textarea {
 
 		#header .content {
 			border-style: solid;
-			border-color: #ffffff;
+			border-color: goldenrod;
 			border-top-width: 1px;
 			border-bottom-width: 1px;
 			max-width: 100%;
@@ -1369,13 +1425,13 @@ input, select, textarea {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid 1px #ffffff;
+			border: solid 1px goldenrod;
 			border-radius: 4px;
 		}
 
 			#header nav ul li {
 				padding-left: 0;
-				border-left: solid 1px #ffffff;
+				border-left: solid 1px goldenrod;
 			}
 
 				#header nav ul li:first-child {
@@ -1410,7 +1466,7 @@ input, select, textarea {
 			left: calc(50% - 1px);
 			width: 1px;
 			height: 100%;
-			background: #ffffff;
+			background: goldenrod;
 		}
 
 		#header nav.use-middle ul li.is-middle {
