@@ -211,8 +211,7 @@ input, select, textarea {
 svg {
     display: inline-block;
     font: 5em 'Montserrat';
-    width: 100%;
-    height: auto;   
+    width: 100%; 
 }
 
 .text-copy {
